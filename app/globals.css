@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000814;
+  --foreground: #e0e0e0;
+  --primary: #1e3a8a;
+  --secondary: #1e40af;
+  --accent: #3b82f6;
+  --gradient-start: #000814;
+  --gradient-mid: #001d3d;
+  --gradient-end: #003566;
+}
+
+body {
+  color: var(--foreground);
+  background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-mid), var(--gradient-end));
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle reflection effect */
+.reflection {
+  position: relative;
+}
+
+.reflection::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), transparent);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(30, 58, 138, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* OLED-friendly card */
+.oled-card {
+  background: linear-gradient(135deg, rgba(0, 13, 26, 0.8), rgba(0, 29, 61, 0.6));
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
