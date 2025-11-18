@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media - Shaun Williamson Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+            <h1 class="site-title">Shaun Williamson</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="media.html" class="active">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="media-page">
+        <!-- Photo Gallery Section -->
+        <section class="photo-gallery" id="gallery">
+            <div class="section-header">
+                <h2 class="section-title">Photo Gallery</h2>
+                <p class="section-subtitle">High-resolution performance and promotional photos</p>
+            </div>
+            <div class="photo-grid">
+                <!-- Photos will be added dynamically with lazy loading -->
+                <div class="photo-item" data-aos="fade-up">
+                    <img class="lazy-image" 
+                         data-src="https://picsum.photos/800/600?random=1" 
+                         alt="Performance Photo 1"
+                         loading="lazy">
+                    <div class="photo-overlay">
+                        <button class="view-full" data-index="0">View Full Size</button>
+                    </div>
+                </div>
+                <div class="photo-item" data-aos="fade-up" data-aos-delay="100">
+                    <img class="lazy-image" 
+                         data-src="https://picsum.photos/800/600?random=2" 
+                         alt="Performance Photo 2"
+                         loading="lazy">
+                    <div class="photo-overlay">
+                        <button class="view-full" data-index="1">View Full Size</button>
+                    </div>
+                </div>
+                <div class="photo-item" data-aos="fade-up" data-aos-delay="200">
+                    <img class="lazy-image" 
+                         data-src="https://picsum.photos/800/600?random=3" 
+                         alt="Performance Photo 3"
+                         loading="lazy">
+                    <div class="photo-overlay">
+                        <button class="view-full" data-index="2">View Full Size</button>
+                    </div>
+                </div>
+                <div class="photo-item" data-aos="fade-up">
+                    <img class="lazy-image" 
+                         data-src="https://picsum.photos/800/600?random=4" 
+                         alt="Performance Photo 4"
+                         loading="lazy">
+                    <div class="photo-overlay">
+                        <button class="view-full" data-index="3">View Full Size</button>
+                    </div>
+                </div>
+                <div class="photo-item" data-aos="fade-up" data-aos-delay="100">
+                    <img class="lazy-image" 
+                         data-src="https://picsum.photos/800/600?random=5" 
+                         alt="Performance Photo 5"
+                         loading="lazy">
+                    <div class="photo-overlay">
+                        <button class="view-full" data-index="4">View Full Size</button>
+                    </div>
+                </div>
+                <div class="photo-item" data-aos="fade-up" data-aos-delay="200">
+                    <img class="lazy-image" 
+                         data-src="https://picsum.photos/800/600?random=6" 
+                         alt="Performance Photo 6"
+                         loading="lazy">
+                    <div class="photo-overlay">
+                        <button class="view-full" data-index="5">View Full Size</button>
+                    </div>
+                </div>
+                <div class="photo-item" data-aos="fade-up">
+                    <img class="lazy-image" 
+                         data-src="https://picsum.photos/800/600?random=7" 
+                         alt="Performance Photo 7"
+                         loading="lazy">
+                    <div class="photo-overlay">
+                        <button class="view-full" data-index="6">View Full Size</button>
+                    </div>
+                </div>
+                <div class="photo-item" data-aos="fade-up" data-aos-delay="100">
+                    <img class="lazy-image" 
+                         data-src="https://picsum.photos/800/600?random=8" 
+                         alt="Performance Photo 8"
+                         loading="lazy">
+                    <div class="photo-overlay">
+                        <button class="view-full" data-index="7">View Full Size</button>
+                    </div>
+                </div>
+                <div class="photo-item" data-aos="fade-up" data-aos-delay="200">
+                    <img class="lazy-image" 
+                         data-src="https://picsum.photos/800/600?random=9" 
+                         alt="Performance Photo 9"
+                         loading="lazy">
+                    <div class="photo-overlay">
+                        <button class="view-full" data-index="8">View Full Size</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section" id="videos">
+            <div class="section-header">
+                <h2 class="section-title">Videos</h2>
+                <p class="section-subtitle">Live performances and music videos</p>
+            </div>
+            <div class="video-grid">
+                <!-- YouTube Videos -->
+                <div class="video-container" data-aos="fade-up">
+                    <div class="video-wrapper">
+                        <iframe 
+                            class="lazy-video"
+                            data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="Performance Video 1"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Live Performance - Summer Festival 2024</h3>
+                        <p>An energetic performance from the main stage</p>
+                    </div>
+                </div>
+                <div class="video-container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="video-wrapper">
+                        <iframe 
+                            class="lazy-video"
+                            data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="Performance Video 2"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Studio Session - New Single</h3>
+                        <p>Behind the scenes in the recording studio</p>
+                    </div>
+                </div>
+                <!-- Vimeo Video -->
+                <div class="video-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="video-wrapper">
+                        <iframe 
+                            class="lazy-video"
+                            data-src="https://player.vimeo.com/video/148751763" 
+                            title="Performance Video 3"
+                            frameborder="0" 
+                            allow="autoplay; fullscreen; picture-in-picture" 
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Official Music Video</h3>
+                        <p>Latest single release - available now</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Press Kit Section -->
+        <section class="press-kit" id="press-kit">
+            <div class="section-header">
+                <h2 class="section-title">Press Kit</h2>
+                <p class="section-subtitle">Download high-resolution assets and promotional materials</p>
+            </div>
+            <div class="press-kit-content">
+                <div class="press-bio glassmorphic-card" data-aos="fade-up">
+                    <h3>Biography</h3>
+                    <p>Shaun Williamson is a versatile musician and performer whose passion for music transcends genres. With years of experience in live performances and studio recordings, Shaun brings a unique blend of emotion and technical skill to every project.</p>
+                    <p>His journey through music has taken him from intimate acoustic sessions to large festival stages, always connecting with audiences through authentic and powerful performances. Drawing inspiration from classical training and contemporary influences, Shaun creates music that resonates with listeners across generations.</p>
+                    <div class="bio-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Performances</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Venues</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="press-downloads glassmorphic-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Downloads</h3>
+                    <div class="download-section">
+                        <h4>High-Resolution Photos</h4>
+                        <ul class="download-list">
+                            <li>
+                                <a href="#" class="download-link" download>
+                                    <span class="download-icon">📸</span>
+                                    <span class="download-text">
+                                        <strong>Promotional Photo 1</strong>
+                                        <small>JPG, 3000x2000px, 5MB</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="download-link" download>
+                                    <span class="download-icon">📸</span>
+                                    <span class="download-text">
+                                        <strong>Promotional Photo 2</strong>
+                                        <small>JPG, 3000x2000px, 4.8MB</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="download-link" download>
+                                    <span class="download-icon">📸</span>
+                                    <span class="download-text">
+                                        <strong>Performance Photo Set</strong>
+                                        <small>ZIP, 10 images, 45MB</small>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="download-section">
+                        <h4>Press Materials</h4>
+                        <ul class="download-list">
+                            <li>
+                                <a href="#" class="download-link" download>
+                                    <span class="download-icon">📄</span>
+                                    <span class="download-text">
+                                        <strong>Full Press Kit</strong>
+                                        <small>PDF, 2.5MB</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="download-link" download>
+                                    <span class="download-icon">📄</span>
+                                    <span class="download-text">
+                                        <strong>Biography & Facts</strong>
+                                        <small>PDF, 500KB</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="download-link" download>
+                                    <span class="download-icon">🎵</span>
+                                    <span class="download-text">
+                                        <strong>EPK (Electronic Press Kit)</strong>
+                                        <small>ZIP, All materials, 50MB</small>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="press-contact glassmorphic-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Media Contact</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>General Inquiries:</strong>
+                            <a href="mailto:info@shaunwilliamsonmusic.com">info@shaunwilliamsonmusic.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Press & Media:</strong>
+                            <a href="mailto:press@shaunwilliamsonmusic.com">press@shaunwilliamsonmusic.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Booking:</strong>
+                            <a href="mailto:booking@shaunwilliamsonmusic.com">booking@shaunwilliamsonmusic.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" style="display: none;">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="Full size image">
+            <div class="lightbox-caption"></div>
+        </div>
+        <div class="lightbox-counter"></div>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Shaun Williamson Music. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
