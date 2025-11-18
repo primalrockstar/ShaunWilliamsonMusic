@@ -4,6 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Shaun Williamson - Musician & Composer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .home-hero {
+            position: relative;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 10rem 0;
+            text-align: center;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .home-hero-content h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .home-hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        @media (max-width: 768px) {
+            .home-hero {
+                padding: 6rem 0;
+            }
+            
+            .home-hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .home-hero-content p {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Shaun Williamson</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+
+
     <meta name="description" content="Shaun Williamson - Professional Musician">
 
 
@@ -40,9 +111,30 @@
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
+
             </ul>
         </div>
     </nav>
+
+
+    <!-- Hero Section -->
+    <section class="home-hero">
+        <div class="home-hero-content">
+            <h1>Shaun Williamson</h1>
+            <p>Musician | Composer | Producer</p>
+            <a href="about.html" class="cta-button">Discover My Story</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Shaun Williamson. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Spotify">Spotify</a>
+                <a href="#" aria-label="SoundCloud">SoundCloud</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
 
     <!-- Main Content -->
     <main class="main-content">
@@ -115,11 +207,14 @@
             
             <div class="footer-copyright">
                 <p>&copy; <span id="currentYear"></span> Shaun Williamson. All rights reserved.</p>
+
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
+
 
     <header class="site-header">
         <nav class="nav-container">
@@ -263,6 +358,7 @@
             </div>
         </section>
     </div>
+
 
 
 </body>
